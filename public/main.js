@@ -1,4 +1,4 @@
-const socket = io("https://webrtc-btl.herokuapp.com/");
+const socket = io("http://localhost:3000");
 
 const videoGrid = document.getElementById("video-grid");
 const myVideo = document.createElement("video");
@@ -7,10 +7,9 @@ myVideo.muted = true;
 const peers = {}
 
 var peer = new Peer(undefined, {
-    secure: true,
     path: '/',
-    host: "https://webrtc-btl.herokuapp.com/",
-    port: 443,
+    host: "/",
+    port: 3001,
 });
 
 let myVideoStream;
