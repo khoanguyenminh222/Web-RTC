@@ -1,4 +1,4 @@
-const socket = io("https://webrtc-btl.herokuapp.com");
+const socket = io("https://webrtc-btl.herokuapp.com/");
 
 const videoGrid = document.getElementById("video-grid");
 const myVideo = document.createElement("video");
@@ -8,8 +8,7 @@ const peers = {}
 
 var peer = new Peer(undefined, {
     secure: true,
-    path: "/",
-    host: "https://webrtc-btl.herokuapp.com",
+    host: "https://webrtc-btl.herokuapp.com/",
     port: "443",
 });
 
