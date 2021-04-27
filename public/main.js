@@ -8,7 +8,7 @@ const peers = {}
 
 var peer = new Peer(undefined, {
     secure: true,
-    path: '/peerjs',
+    path: '/webrtc-btl',
     host: "https://webrtc-btl.herokuapp.com/",
     port: 443,
 });
