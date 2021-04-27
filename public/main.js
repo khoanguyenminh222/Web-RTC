@@ -1,4 +1,4 @@
-const socket = io("http://localhost:3000");
+const socket = io("https://webrtc-btl.herokuapp.com");
 
 const videoGrid = document.getElementById("video-grid");
 const myVideo = document.createElement("video");
