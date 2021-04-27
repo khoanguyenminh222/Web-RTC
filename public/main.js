@@ -7,9 +7,10 @@ myVideo.muted = true;
 const peers = {}
 
 var peer = new Peer(undefined, {
+    secure: true,
     path: "/",
-    host: "/",
-    port: "3001",
+    host: "https://webrtc-btl.herokuapp.com",
+    port: "443",
 });
 
 let myVideoStream;
