@@ -9,7 +9,7 @@ const peers = {}
 var peer = new Peer(undefined, {
     secure: true,
     host: "https://webrtc-btl.herokuapp.com/",
-    port: "443",
+    port: "9000",
 });
 
 let myVideoStream;
